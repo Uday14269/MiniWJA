@@ -1,0 +1,29 @@
+
+@model MiniWJA.Domain.Device
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Device Details</h2>
+<div class="panel panel-default">
+  <div class="panel-heading">@Model.Hostname (@Model.IpAddress)</div>
+  <div class="panel-body">
+    <p><strong>Vendor:</strong> @Model.Vendor</p>
+    <p><strong>Model:</strong> @Model.Model</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+    <p><strong>Last Seen:</strong> @Model.LastSeenUtc.ToLocalTime()</p>
+    <h4>Supplies</h4>
+    <ul>
+      <li>Black: @Model.Supplies.BlackPercent%</li>
+      <li>Cyan: @Model.Supplies.CyanPercent%</li>
+      <li>Magenta: @Model.Supplies.MagentaPercent%</li>
+      <li>Yellow: @Model.Supplies.YellowPercent%</li>
+    </ul>
+    <h4>Counters</h4>
+    <ul>
+      <li>Total Pages: @Model.Counters.TotalPages</li>
+      <li>Color Pages: @Model.Counters.ColorPages</li>
+      <li>Mono Pages: @Model.Counters.MonoPages</li>
+      <li>Updated: @Model.Counters.UpdatedUtc.ToLocalTime()</li>
+    </ul>
+  </div>
+</div>

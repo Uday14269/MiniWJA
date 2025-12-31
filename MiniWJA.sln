@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniWJA.Domain", "MiniWJA.Domain\MiniWJA.Domain.csproj", "{26FBAE4D-F27D-40FB-9AFA-6971366D78D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniWJA.Data", "MiniWJA.Data\MiniWJA.Data.csproj", "{7562EF8E-2B72-4FE3-A9C3-134F9ADE4BA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniWJA.Service", "MiniWJA.Service\MiniWJA.Service.csproj", "{F240B0F3-E614-4170-943B-86E5DA91F3C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniWJA.Web", "MiniWJA.Web\MiniWJA.Web.csproj", "{E0CD12FB-DEDD-4483-88C6-98D82BA4F2DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26FBAE4D-F27D-40FB-9AFA-6971366D78D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26FBAE4D-F27D-40FB-9AFA-6971366D78D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26FBAE4D-F27D-40FB-9AFA-6971366D78D0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{26FBAE4D-F27D-40FB-9AFA-6971366D78D0}.Debug|x86.Build.0 = Debug|Any CPU
+		{7562EF8E-2B72-4FE3-A9C3-134F9ADE4BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7562EF8E-2B72-4FE3-A9C3-134F9ADE4BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7562EF8E-2B72-4FE3-A9C3-134F9ADE4BA2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7562EF8E-2B72-4FE3-A9C3-134F9ADE4BA2}.Debug|x86.Build.0 = Debug|Any CPU
+		{F240B0F3-E614-4170-943B-86E5DA91F3C2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F240B0F3-E614-4170-943B-86E5DA91F3C2}.Debug|Any CPU.Build.0 = Debug|x86
+		{F240B0F3-E614-4170-943B-86E5DA91F3C2}.Debug|x86.ActiveCfg = Debug|x86
+		{F240B0F3-E614-4170-943B-86E5DA91F3C2}.Debug|x86.Build.0 = Debug|x86
+		{E0CD12FB-DEDD-4483-88C6-98D82BA4F2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CD12FB-DEDD-4483-88C6-98D82BA4F2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CD12FB-DEDD-4483-88C6-98D82BA4F2DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E0CD12FB-DEDD-4483-88C6-98D82BA4F2DD}.Debug|x86.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

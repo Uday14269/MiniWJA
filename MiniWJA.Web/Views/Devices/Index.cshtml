@@ -1,0 +1,29 @@
+
+@model IEnumerable<MiniWJA.Domain.Device>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Devices</h2>
+<form method="get" class="form-inline">
+    <input name="search" class="form-control" placeholder="Search..." />
+    <button class="btn btn-primary">Search</button>
+</form>
+<table class="table table-striped">
+    <thead>
+        <tr><th>Hostname</th><th>IP</th><th>Vendor</th><th>Model</th><th>Status</th><th>Last Seen</th><th></th></tr>
+    </thead>
+    <tbody>
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.Hostname</td>
+            <td>@d.IpAddress</td>
+            <td>@d.Vendor</td>
+            <td>@d.Model</td>
+            <td>@d.Status</td>
+            <td>@d.LastSeenUtc.ToLocalTime()</td>
+            <td><a href="@Url.Action("Details", new { id = d.Id })" class="btn btn-default btn-xs">Details</a></td>
+        </tr>
+    }
+    </tbody>
+</table>
